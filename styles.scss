@@ -1,0 +1,121 @@
+$color-principal: rgba(226, 49, 49, 0.932);
+$background-color-principal: rgba(238, 186, 186, 0.842);
+$background-color-secundario: #00061a;
+$background-color-blanco: #ffffff;
+$background-color-redG: linear-gradient(90deg, rgba(226, 49, 49, 0.932) 0%, rgba(238, 186, 186, 0.842) 100%);
+$gradiente-azul: linear-gradient(to bottom, rgba(0, 0, 255, 0.932) 0%, #fff);
+$color-dorado: #ffd700;
+$sombra: 0px 4px 8px #ffd900fd;
+$bg-ocuro: #000000;
+@mixin card{
+    background-color: $background-color-secundario;
+    color: $color-dorado;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: $sombra;
+}
+@mixin barra{
+    background-color: $background-color-blanco;
+    padding: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+body{
+    background-color: $bg-ocuro;
+    color: $color-principal;
+    font-family: Arial, sans-serif;
+}
+.barra{
+    @include barra;
+    font-size: 20px;
+    color: $color-dorado;
+    padding: 0;
+    width: 100%;
+
+
+}
+.logo{
+    width: 100px;
+    margin-right: 20px;
+    position: relative;
+    left: 10px;
+}
+.imagenPrincipal{
+    width: 90%;
+    height: auto;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 2s ease;
+    }
+}
+    .imagen{
+        background: $background-color-secundario;
+        margin-bottom: 20px;
+        height: 100%;
+        border-radius: 30px
+    }
+
+.card{
+    @include card;
+    font-size: 25px ;
+    margin-bottom: 10px;
+    &:hover{
+        background-color: $background-color-blanco;
+    }   
+}
+a {
+    text-decoration: none;
+    color:inherit
+}
+.contacto{
+    @include card;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 100%;
+    padding: 0;
+
+}
+.wspIcon{
+    width: 30px;
+    margin-right: 10px;
+}
+
+@media(min-width:700px){
+    main {
+display : grid ;
+grid-template-columns : repeat(3, 1fr) ;
+grid-template-rows : repeat(4, 1fr) ;
+grid-column-gap : 5px;
+grid-row-gap : 5px ;
+margin-bottom: 2rem;
+}
+
+.imagen { grid-area : 1 / 1 / 5 / 2 ; }
+.principal{ grid-area : 1 / 2 / 5 / 4 ; }
+
+.principal {
+display : grid ;
+grid-template-columns : repeat(3, 1fr) ;
+grid-template-rows : repeat(3, 1fr) ;
+grid-column-gap : 5px;
+grid-row-gap : 5px ;
+}
+
+.maquinas { grid-area : 1 / 1 / 5 / 2 ; }
+.insumos { grid-area : 1 / 2 / 3 / 3 ; }
+.reparaciones { grid-area : 1 / 3 / 3 / 4 ; }
+.otro { grid-area : 3 / 2 / 4 / 4 ; }
+
+.barra{
+    width: 100%;
+}
+.contacto{
+    width: 110%;
+}
+}

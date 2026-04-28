@@ -1,11 +1,10 @@
 body {
-  background-color: #000000;
+  background-image: url(./imagenes/bg-imgen1.jpg);
   color: rgba(226, 49, 49, 0.932);
   font-family: Arial, sans-serif;
 }
 
 .barra {
-  background-color: #ffffff;
   padding: 1rem;
   margin-bottom: 20px;
   text-align: center;
@@ -25,7 +24,8 @@ body {
 }
 
 .imagenPrincipal {
-  width: 90%;
+  height: 100%;
+  width: 100%;
   height: auto;
 }
 .imagenPrincipal:hover {
@@ -33,21 +33,14 @@ body {
   transition: all 2s ease;
 }
 
-.imagen {
-  background: #00061a;
-  margin-bottom: 20px;
-  height: 100%;
-  border-radius: 30px;
-}
-
 .card {
-  background-color: #00061a;
+  background: #000000;
   color: #ffd700;
   padding: 10px 20px;
-  border: none;
+  border: solid 0.5px rgba(128, 128, 128, 0.685);
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(255, 217, 0, 0.9921568627);
+  box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -61,13 +54,13 @@ a {
 }
 
 .contacto {
-  background-color: #00061a;
+  background: #000000;
   color: #ffd700;
   padding: 10px 20px;
-  border: none;
+  border: solid 0.5px rgba(128, 128, 128, 0.685);
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(255, 217, 0, 0.9921568627);
+  box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -82,44 +75,82 @@ a {
 
 @media (min-width: 700px) {
   main {
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 2px;
   }
   .imagen {
-    grid-area: 1/1/5/2;
-  }
-  .principal {
-    grid-area: 1/2/5/4;
-  }
-  .principal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-area: 1/1/3/2;
   }
   .maquinas {
-    grid-area: 1/1/5/2;
-  }
-  .insumos {
     grid-area: 1/2/3/3;
   }
+  .insumos {
+    grid-area: 1/3/2/4;
+  }
   .reparaciones {
-    grid-area: 1/3/3/4;
+    grid-area: 1/4/2/5;
   }
   .otro {
-    grid-area: 3/2/4/4;
+    grid-area: 2/3/3/5;
   }
-  .barra {
+  .imagen .maquinas .insumos .reparaciones .otro {
+    background: #000000;
+    color: #ffd700;
+    padding: 30px;
+    border: solid 0.5px rgba(128, 128, 128, 0.685);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
+    height: 100%;
     width: 100%;
+    font-size: auto;
   }
-  .contacto {
-    width: 110%;
-  }
+}
+/* pagina 1*/
+.logo2 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.T--pagina1 {
+  color: #ffd700;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.parrafo-1 {
+  background: #000000;
+  color: #ffd700;
+  padding: 10px 20px;
+  border: solid 0.5px rgba(128, 128, 128, 0.685);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
+  color: #ffd700;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+.rectas {
+  background: #000000;
+  color: #ffd700;
+  padding: 10px 20px;
+  border: solid 0.5px rgba(128, 128, 128, 0.685);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
+}
+
+.d-block {
+  height: 400px;
 }
 
 /*# sourceMappingURL=styles.css.map */

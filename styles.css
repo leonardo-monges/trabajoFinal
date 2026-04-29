@@ -97,20 +97,21 @@ a {
   .otro {
     grid-area: 2/3/3/5;
   }
-  .imagen .maquinas .insumos .reparaciones .otro {
-    background: #000000;
-    color: #ffd700;
-    padding: 30px;
-    border: solid 0.5px rgba(128, 128, 128, 0.685);
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
-    height: 100%;
-    width: 100%;
-    font-size: auto;
-  }
 }
-/* pagina 1*/
+.maquinas, .insumos, .reparaciones, .otro {
+  background-image: url(./imagenes/fondoNegro.jpg);
+  color: #ffd700;
+  font-family: Arial, sans-serif;
+  border: solid 0.5px rgba(128, 128, 128, 0.685);
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 1rem;
+  box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
+}
+
+/*---------------------------------------------------- pagina 1----------------------------------------------------------*/
 .logo2 {
   width: 5rem;
   height: 5rem;
@@ -126,31 +127,35 @@ a {
 .parrafo-1 {
   background: #000000;
   color: #ffd700;
-  padding: 10px 20px;
+  padding: 30px;
   border: solid 0.5px rgba(128, 128, 128, 0.685);
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
+  height: 100%;
+  width: 100%;
+  font-size: auto;
   color: #ffd700;
   font-size: 1.2rem;
-  text-align: justify;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  margin: 10px;
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: normal;
 }
 
-.rectas {
-  background: #000000;
+.rectas, .collareta, .overlock, .familiares {
+  background-image: url(./imagenes/fondoNegro.jpg);
   color: #ffd700;
-  padding: 10px 20px;
+  font-family: Arial, sans-serif;
   border: solid 0.5px rgba(128, 128, 128, 0.685);
-  border-radius: 10px;
-  text-align: center;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 1rem;
   box-shadow: 0px 4px 8px rgba(34, 32, 23, 0.862745098);
 }
 
 .d-block {
   height: 400px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+  width: 400px;
+}/*# sourceMappingURL=styles.css.map */
